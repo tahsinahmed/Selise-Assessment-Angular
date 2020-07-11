@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row" style="background-color: dodgerblue; color: white; padding: 20px">
+    <div class="a center">
+      <h5><b>{{data['teamName']}}</b></h5>
+    </div>
+  </div>
+  <div class="row">
+    <table class="table table-bordered" style="text-align: center">
+      <thead>
+      <tr>
+        <th scope="col">Played</th>
+        <th scope="col">Win</th>
+        <th scope="col">Loss</th>
+        <th scope="col">Draw</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>{{totalMatches}}</td>
+        <td>{{teamWins}}</td>
+        <td>{{teamLoss}}</td>
+        <td>{{teamDraws}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button type="button" class="btn" (click)="onNoClick()">Close</button>
+</div>
+
